@@ -1,12 +1,14 @@
-- name : install and start nginx
-  hosts: 3.95.206.230
+- name: install and start nginx
+  hosts: frontend
   become: yes
   tasks:
   - name: install nginx
     ansible.builtin.package:
-    name: nginx
-    state: present
+     name: nginx
+     state: present
+
+  - name: start nginx
     ansible.builtin.service:
-    name: https
-    state: started
-    enabled: yes
+     name: https
+     state: started
+     enabled: yes
