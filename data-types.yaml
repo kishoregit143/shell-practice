@@ -1,19 +1,20 @@
-- name: data types
+- name: data types practice
   hosts: local
   connection: local
   vars:
-   course: "dev ops with aws"
-   douration: 120
-   is_live: true
-   toos: # ["linux", "shell", "ansible ", "aws"]
+    course: "dev ops with aws"
+    douration: 120
+    is_live: true
+    #list
+    tools: # ["linux", "shell", "ansible ", "aws"]
     - "linux"
     - "shell"
     - "ansible"
     - "aws"
-  concepts: #dictionary or map
-    clous: aws
-    pm: ansible
-    os: linux
+    concepts: #dictionary or map
+     cloud: aws
+     pm: ansible
+     os: linux
     tasks:
      - name: print course info
        ansible.builtin.debug:
