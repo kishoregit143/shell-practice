@@ -1,5 +1,5 @@
 - name: data types
-  host: local
+  hosts: local
   connection: local
   vars:
    course: "dev ops with aws"
