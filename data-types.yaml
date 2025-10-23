@@ -1,9 +1,9 @@
-- name: data types practice
+- name: data types
   hosts: local
   connection: local
   vars:
     course: "dev ops with aws"
-    douration: 120
+    duration: 120
     is_live: true
     #list
     tools: # ["linux", "shell", "ansible ", "aws"]
@@ -15,9 +15,9 @@
      cloud: aws
      pm: ansible
      os: linux
-    tasks:
+     tasks:
      - name: print course info
        ansible.builtin.debug:
-        msg: "course name is :  {{course}} and duration is {{douration}} hours tools are {{tools}} concepts are: {{concepts}}" 
+        msg: "course name is :  {{course}} and duration is {{duration}} hours tools are {{tools}} concepts are: {{concepts}}" 
 
 
