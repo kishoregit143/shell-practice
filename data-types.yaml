@@ -1,4 +1,4 @@
-- name: data types practice
+- name: data types
   host: local
   connection: local
   vars:
