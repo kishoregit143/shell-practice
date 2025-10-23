@@ -1,7 +1,7 @@
 - name: play level variable
   hosts: local
   connection: local #Ansible connecting to local host
-  vars-file:
+  vars-files:
    - course.yaml
   tasks:
    - name: print course info
