@@ -8,7 +8,12 @@
     tags:
      Application: payment
      Environment: dev
-    
+   #list  
+    listtags:
+    - key: Application
+      value: payment
+    - key: Environment
+      value: dev
 
   tasks:
    - name: default variable
@@ -22,4 +27,9 @@
  # MAP TO LIST
    - name: convert map to list
      ansible.builtin.debug:
-       msg: "tags are: {{ tags | dict2items }}"        
+       msg: "tags are: {{ tags | dict2items }}"    
+ #convert list to map
+   - name: convert list to map
+     ansible.builtin.debug:
+       msg: "listtags to map is : {{ listtags | items2dict }}"
+         
