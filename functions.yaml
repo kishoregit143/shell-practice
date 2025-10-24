@@ -5,31 +5,28 @@
   vars:
     technologies: devops, linux, windows, shell, ansible # string
     #dictionary to map
-    tags:
-     Application: payment
-     Environment: dev
-   #list  
-    listtags:
-    - key: Application
-      value: payment
-    - key: Environment
-      value: dev
+  #   tags:
+  #    Application: payment
+  #    Environment: dev
+  #  #list  
+  #   listtags:
+  #   - key: Application
+  #     value: payment
+  #   - key: Environment
+  #     value: dev
 
-  tasks:
-   - name: default variable
-     ansible.builtin.debug:
-      msg: "hello, {{name | default('pagadala')}}"
+  # tasks:
+  #  - name: default variable
+  #    ansible.builtin.debug:
+  #     msg: "hello, {{name | default('pagadala')}}"
 
  #string to list
-   - name: convert string to list
-     ansible.builtin.debug:
-      msg: "technologies are: {{ technologies | split(', ') }}"   
- # MAP TO LIST
-   - name: convert map to list
-     ansible.builtin.debug:
-       msg: "tags are: {{ tags | dict2items }}"    
- #convert list to map
-   - name: convert list to map
-     ansible.builtin.debug:
-       msg: "listtags to map is : {{ listtags | items2dict }}"
+- name: convert string to list
+  ansible.builtin.debug:
+  msg: "technologies are: {{ technologies | split(', ') }}"   
+#  # MAP TO LIST
+#    - name: convert map to list
+#      ansible.builtin.debug:
+#        msg: "tags are: {{ tags | dict2items }}"    
+#  #convert list to
          
