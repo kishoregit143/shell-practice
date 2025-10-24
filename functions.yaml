@@ -4,6 +4,7 @@
 
   vars:
     technologies: devops, linux, windows, shell, ansible # string
+    name: kishire
     #dictionary to map
     tags:
      Application: payment
