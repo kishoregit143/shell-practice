@@ -43,7 +43,7 @@
        msg: "convert yaml in to json is : {{ course_info | to_json }}"     
 
    - name: save json to file
-  ansible.builtin.copy:
-  dest: ./vars-file.json
-  content: "{{ vars-file.yaml | to_nice_json }}"
+     ansible.builtin.copy:
+     dest: ./vars-file.json
+     content: "{{ vars-file.yaml | to_nice_json }}"
          
