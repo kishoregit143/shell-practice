@@ -46,4 +46,7 @@
      ansible.builtin.copy:
        dest: ./vars-file.json
        content: "here save json as file : {{ course_info | to_nice_json }}"
+   - name: convert uppercae to lowercase
+     ansible.builtin.debug:
+       msg: "{{name | upper}}"
          
