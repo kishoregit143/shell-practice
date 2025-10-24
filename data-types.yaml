@@ -21,3 +21,5 @@
         msg: "course name is :  {{course}} and duration is {{duration}} hours tools are {{tools}} concepts are: {{concepts}}" 
 
 
+#list []
+#map {}
