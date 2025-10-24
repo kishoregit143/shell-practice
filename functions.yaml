@@ -45,5 +45,5 @@
    - name: save json to file
      ansible.builtin.copy:
        dest: ./vars-file.json
-       content: "{{ course_info | to_nice_json }}"
+       content: "here save json as file : {{ course_info | to_nice_json }}"
          
