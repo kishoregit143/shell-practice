@@ -38,7 +38,7 @@
       course_info: "{{ lookup('file', 'vars-file.yaml') | from_yaml }}"   
 
   #convert yaml into json
-- name: convert yaml into json
-  ansible.builtin.debug:
-    msg: "convert yaml in to json is : {{ course_info | to_json }}"      
+   - name: convert yaml into json
+     ansible.builtin.debug:
+       msg: "convert yaml in to json is : {{ course_info | to_json }}"      
          
