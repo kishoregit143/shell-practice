@@ -40,5 +40,10 @@
   #convert yaml into json
    - name: convert yaml into json
      ansible.builtin.debug:
-       msg: "convert yaml in to json is : {{ course_info | to_json }}"      
+       msg: "convert yaml in to json is : {{ course_info | to_json }}"     
+
+   - name: save json to file
+     ansible.builtin.copy:
+      dest: "./vars-file.json"
+      content: "{{ vars-file.yaml | to_nice_json }}"
          
